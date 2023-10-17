@@ -1,0 +1,5 @@
+
+public class CommissionEmployee extends Employee{
+double grossSale;
+double commissionRate;
+}

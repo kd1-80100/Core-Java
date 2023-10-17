@@ -1,0 +1,5 @@
+
+public class HourlyEmployees extends Employee {
+	double wage;
+	double workedhours;
+}

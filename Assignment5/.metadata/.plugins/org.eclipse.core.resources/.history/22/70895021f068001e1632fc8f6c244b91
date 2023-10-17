@@ -1,0 +1,10 @@
+
+public class SalariedEmp extends Employee {
+	double weeklySal;
+
+	public SalariedEmp(String fName, String lName, int ssn, double weeklySal) {
+		super(fName, lName, ssn);
+		this.weeklySal = weeklySal;
+	}
+
+}

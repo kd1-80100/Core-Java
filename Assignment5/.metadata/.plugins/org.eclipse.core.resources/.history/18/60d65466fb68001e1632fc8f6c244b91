@@ -1,0 +1,5 @@
+import java.util.Scanner;
+
+public class TesterClass {
+	Scanner sc = new Scanner(System.in);
+}

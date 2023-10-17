@@ -1,0 +1,15 @@
+import java.security.PublicKey;
+import java.util.Scanner;
+
+public class TesterClass {
+	public static void main(String[] args) {
+		public int Menu() {
+			Scanner sc = new Scanner(System.in);
+			int choice;
+			System.out.println("*****************************************************");
+			System.out.println("1. Salaried Employee");
+			System.out.println("2. Hourly Employee");
+			System.out.println("3. ");
+		}
+	}
+}

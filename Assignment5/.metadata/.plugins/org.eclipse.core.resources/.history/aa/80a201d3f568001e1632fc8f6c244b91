@@ -1,0 +1,40 @@
+import java.util.Scanner;
+
+public class HourlyEmployees extends Employee {
+	double wage;
+	double workedhours;
+
+	public HourlyEmployees(String fName, String lName, int ssn, double wage, double workedhours) {
+		super(fName, lName, ssn);
+		this.wage = wage;
+		this.workedhours = workedhours;
+	}
+
+	public double getWage() {
+		return wage;
+	}
+
+	public void setWage(double wage) {
+		this.wage = wage;
+	}
+
+	public double getWorkedhours() {
+		return workedhours;
+	}
+
+	public void setWorkedhours(double workedhours) {
+		this.workedhours = workedhours;
+	}
+
+	@Override
+	public void acceptData() {
+		Scanner sc=new Scanner(System.in)
+		super.acceptData();
+		
+	}
+	@Override
+	public String toString() {
+		return "HourlyEmployees [wage=" + wage + ", workedhours=" + workedhours + "]";
+	}
+
+}

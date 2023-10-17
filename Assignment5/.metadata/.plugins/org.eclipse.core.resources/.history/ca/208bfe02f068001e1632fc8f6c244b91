@@ -1,0 +1,5 @@
+
+public class SalariedEmp extends Employee {
+	double weeklySal;
+
+}

@@ -1,0 +1,37 @@
+import java.util.Scanner;
+
+public class SalariedEmp extends Employee {
+	double weeklySal;
+
+	public SalariedEmp(String fName, String lName, int ssn, double weeklySal) {
+		super(fName, lName, ssn);
+		this.weeklySal = weeklySal;
+	}
+
+	public double getWeeklySal() {
+		return weeklySal;
+	}
+
+	public void setWeeklySal(double weeklySal) {
+		this.weeklySal = weeklySal;
+	}
+
+	@Override
+	public void acceptData() {
+		Scanner sc= new Scanner(System.in);
+		super.acceptData();
+		System.out.println("Enter weekly salary:");
+		this.weeklySal=sc.nextDouble();
+	}
+	@Override
+	public void displayData() {
+		super.displayData();
+		System.out.println();
+	}
+	
+	@Override
+	public String toString() {
+		return "SalariedEmp [weeklySal=" + weeklySal + "]";
+	}
+
+}
