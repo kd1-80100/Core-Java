@@ -1,0 +1,32 @@
+package com.sunbeam;
+
+import java.util.Comparator;
+
+public class SelectionSort {
+	static <T> void selectionSort(T[] arr, Comparator<T> c) {
+		for (int i = 0; i < arr.length - 1; i++) {
+			for (int j = i + 1; j < arr.length; j++) {
+				if (c.compare(arr[i], arr[j]) > 0) {
+					T temp = arr[i];
+					arr[i] = arr[j];
+					arr[j] = temp;
+				}
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		Double[] arr = new Double[5];
+		arr[0] = 20.11;
+		arr[1] = 22.11;
+		arr[2] = 41.11;
+		arr[3] = 10.11;
+		arr[4] = 29.11;
+		CompareArray compareArray = new CompareArray();
+		selectionSort(arr, compareArray);
+		System.out.println("After Sorting array : ");
+		for (Double double1 : arr) {
+			System.out.println(double1);
+		}
+	}
+}

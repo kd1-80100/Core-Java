@@ -1,0 +1,12 @@
+package com.sunbeam;
+
+import java.util.Comparator;
+
+public class CompareArray implements Comparator<Double>{
+
+	@Override
+	public int compare(Double d1, Double d2) {
+		return 0;
+	}
+
+}

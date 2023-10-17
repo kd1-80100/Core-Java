@@ -1,0 +1,7 @@
+package com.sunbeam;
+/*A generic sort method for implementing selection sort algorithm is given below. In main(), 
+ create array of Double and sort it by calling selectionSort().
+ */
+public class A9Q2 {
+
+}

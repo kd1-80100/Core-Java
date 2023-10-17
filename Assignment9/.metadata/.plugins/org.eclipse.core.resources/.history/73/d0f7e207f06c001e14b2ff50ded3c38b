@@ -1,0 +1,28 @@
+package com.sunbeam;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class Test {
+public static void main(String[] args) {
+	Collection<Book> b=new ArrayList<Book>();
+	public static int menu() {
+		int choice;
+		System.out.println("***********************************************************************************");
+		System.out.println("** Menu **");
+		System.out.println("0. Exit");
+		System.out.println("1. Add a new book in list");
+		System.out.println("2. Display all books in forward order");
+		System.out.println("3. Delete book at given index");
+		System.out.println("4. Display names of all fruits in the basket:");
+		System.out.println("5. Display name,color,weight,taste of all fresh fruits in the basket:");
+		System.out.println("6. Display tastes of all stale(not fresh) fruits in the basket:");
+		System.out.println("7.Mark a fruit as stale");
+		System.out.println("8.Mark all sour fruits stale");
+		System.out.print("Enter the choice:");
+		choice = sc.nextInt();
+		System.out.println("***********************************************************************************");
+		return choice;
+	}
+}
+}

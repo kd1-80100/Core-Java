@@ -1,0 +1,10 @@
+package com.sunbeam;
+
+public class Test {
+	public static void main(String[] args) {
+		Student s[]=new Student[5];
+		s[0]=new Student();
+	}
+
+}
+//int roll, String name, String city, double marks

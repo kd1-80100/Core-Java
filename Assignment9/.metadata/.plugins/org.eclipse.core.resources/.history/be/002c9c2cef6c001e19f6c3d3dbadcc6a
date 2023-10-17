@@ -1,0 +1,12 @@
+package com.sunbeam;
+
+import java.util.ArrayList;
+import java.util.Collection;
+
+public class Test {
+public static void main(String[] args) {
+	Collection<Book> b=new ArrayList<Book>();
+	b.add("1d6d498w4",375.50,"Author1",5);
+	
+}
+}

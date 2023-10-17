@@ -1,0 +1,35 @@
+package com.sunbeam;
+
+import java.util.Comparator;
+
+public class StudentComparator implements Comparator<Student>{
+	
+	
+	@Override
+	public int compare(Student s1, Student s2) {
+		int diff=-(s1.getCity().compareTo(s2.getCity());
+		if (diff==0) {
+			diff=Double.compare(s1.getMarks(), s2.getMarks());
+		}
+		return 0;
+	}
+
+}
+
+
+/*
+class EmpNameSalComparator implements Comparator<Employee> {
+@Override
+public int compare(Employee e1, Employee e2) {
+	int diff = e1.getName().compareTo(e2.getName());
+	if(diff == 0)
+		diff = Double.compare(e1.getSalary(), e2.getSalary());
+	return diff;
+}
+}
+EmpNameSalComparator comparator = new EmpNameSalComparator();
+Arrays.sort(arr, comparator);
+System.out.println("After Sort by Name, Sal: ");
+for (Employee e : arr)		
+System.out.println(e);
+*/

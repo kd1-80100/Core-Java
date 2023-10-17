@@ -1,0 +1,31 @@
+package com.sunbeam;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Scanner;
+
+public class Test {
+public static int main(String[] args) {
+	int index;
+	Collection<Book> b=new ArrayList<Book>();
+	Book arr[]=new Book[index];
+	Scanner sc=new Scanner(System.in);
+	int menu() {
+		int choice;
+		System.out.println("***********************************************************************************");
+		System.out.println("0. Exit");
+		System.out.println("1. Add a new book in list");
+		System.out.println("2. Display all books in forward order");
+		System.out.println("3. Delete book at given index");
+		System.out.println("4. Check if book with given isbn is in list or not");
+		System.out.println("5. Delete all books in list");
+		System.out.println("6. Display number of books in list");
+		System.out.println("7. Sort all books by price in desc order");
+		System.out.print("Enter the choice:");
+		choice = sc.nextInt();
+		System.out.println("***********************************************************************************");
+		return choice;
+	}
+	
+}
+}

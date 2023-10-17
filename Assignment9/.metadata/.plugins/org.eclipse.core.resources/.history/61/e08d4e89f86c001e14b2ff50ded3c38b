@@ -1,0 +1,16 @@
+package com.sunbeam;
+
+import java.util.ArrayList;
+import java.util.Collection;
+import java.util.Scanner;
+
+public class Test {
+public static int main(String[] args) {
+	int index;
+	Collection<Book> b=new ArrayList<Book>();
+	Book arr[]=new Book[index];
+	Scanner sc=new Scanner(System.in);
+	
+	
+}
+}
