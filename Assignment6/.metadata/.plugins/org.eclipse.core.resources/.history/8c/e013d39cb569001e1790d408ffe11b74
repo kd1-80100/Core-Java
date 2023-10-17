@@ -1,0 +1,27 @@
+
+public class StringClass {
+	public String s;
+
+	public StringClass(String s) {
+		this.s = s;
+	}
+	
+	public StringClass() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public void setS(String s) {
+		if (s.length()>0 || s.length()<80) {
+			
+		}
+		this.s = s;
+	}
+
+	@Override
+	public String toString() {
+		return "StringClass [s=" + s + "]";
+	}
+
+	
+	
+}

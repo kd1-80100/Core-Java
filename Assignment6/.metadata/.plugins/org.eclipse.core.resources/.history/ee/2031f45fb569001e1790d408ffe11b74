@@ -1,0 +1,13 @@
+
+public class StringClass {
+	public String s;
+
+	public StringClass(String s) {
+		this.s = s;
+	}
+	
+	public StringClass() {
+		// TODO Auto-generated constructor stub
+	}
+	
+}

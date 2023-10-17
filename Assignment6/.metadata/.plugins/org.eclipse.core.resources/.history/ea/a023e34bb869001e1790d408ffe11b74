@@ -1,0 +1,42 @@
+import java.util.Scanner;
+
+/* Define a new exception, called ExceptionLineTooLong, that prints out the error message "The
+strings is too long". Write a program that reads a String from user and calculates its length. and
+throws an exception of type ExceptionLineTooLong in the case where a string of length is more
+than 80 characters. */
+
+public class ExceptionLineTooLong extends Exception {
+	private String s1;
+	private String s2;
+
+	public ExceptionLineTooLong() {
+		// TODO Auto-generated constructor stub
+	}
+
+	public ExceptionLineTooLong(String s1, String s2) {
+		this.s1 = s1;
+		this.s2 = s2;
+	}
+
+	public String getS1() {
+		return s1;
+	}
+
+	public void setS1(String s1) {
+		this.s1 = s1;
+	}
+
+	public String getS2() {
+		return s2;
+	}
+
+	public void setS2(String s2) {
+		this.s2 = s2;
+	}
+
+	@Override
+	public String toString() {
+		return "ExceptionLineTooLong [s1=" + s1 + ", s2=" + s2 + "]";
+	}
+
+}
