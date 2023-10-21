@@ -30,6 +30,8 @@ public class Test {
 		System.out.println("4. Delete a book at given index.");
 		System.out.println("5. Delete a book with given isbn.");
 		System.out.println("6. Reverse the list");
+		System.out.println("7. Save books in a file");
+		System.out.println("8. Load books from a file");
 		System.out.println("Enter the choice:");
 		choice = sc.nextInt();
 		return choice;
@@ -42,7 +44,7 @@ public class Test {
 		List<Book> list = new ArrayList<>();
 		while ((choice = menu(sc)) != 0) {
 			switch (choice) {
-			case 1: 
+			case 1:
 				Book b1 = new Book();
 				b1.acceptData();
 				if (list.contains(b1)) {
@@ -57,7 +59,7 @@ public class Test {
 					list.add(b1);
 					System.out.println("Book added in the list.");
 				}
-			
+
 				break;
 			case 2:
 				for (int i = 0; i < list.size(); i++) {
@@ -100,8 +102,8 @@ public class Test {
 				System.out.println("Reverse List " + list);
 				break;
 			case 7:
-				try(FileOutputStream fout=new FileOutputStream("Book.txt")){
-					try(ObjectOutputStream oout = new ObjectOutputStream(fout)){
+				try (FileOutputStream fout = new FileOutputStream("Book.txt")) {
+					try (ObjectOutputStream oout = new ObjectOutputStream(fout)) {
 						oout.writeObject(list);
 					}
 				}
@@ -110,7 +112,7 @@ public class Test {
 				catch (Exception e) {
 					e.printStackTrace();
 				}
-				System.out.println("Book added.");
+				System.out.println("Books saved in file.");
 				break;
 			case 8:
 				try (FileInputStream fin = new FileInputStream("Book.txt")) {
@@ -123,10 +125,9 @@ public class Test {
 							book.setQuantity(oin.readInt());
 						}
 					}
-				}catch (EOFException e) {
+				} catch (EOFException e) {
 					// TODO: handle exception
-				} 
-				catch (Exception e) {
+				} catch (Exception e) {
 					e.printStackTrace();
 				}
 				System.out.println("Books loaded from a file.");
